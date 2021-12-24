@@ -1,5 +1,3 @@
 figlet -w 60 CHINNI
 echo "Your Local IP Address is $(hostname -I)"
-wget -nv https://www.myip.com/ > /dev/null 2>&1
-echo "Your Public Ip Address is $(cat index.html | grep /img/globe_network.png|cut -d $
-rm index.html
+echo "Your Public IP Address is $(curl ifconfig.me -s)"
